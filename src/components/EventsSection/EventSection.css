@@ -1,0 +1,155 @@
+.exams-section {
+    padding: 30px 20px;
+    max-width: 1280px;
+    margin: auto;
+    color: #1a1a1a;
+}
+
+.exams-header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 40px;
+}
+
+.exams-left {
+    width: 230px;
+    border-right: 1px solid #d6d6d6;
+    padding-right: 20px;
+}
+
+.exams-left h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.exams-left h2 span {
+    color: #003366;
+}
+
+.exams-left p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.exams-right {
+    flex: 1;
+    display: inline-flex;
+    gap: 100px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.exam-block {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    max-width: 250px;
+}
+
+.exam-block .icon {
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+.exam-block h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #003366;
+    font-weight: 600;
+}
+
+.exam-block p {
+    margin: 0;
+    font-size: 12px;
+    color: #555;
+}
+
+.cards-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.card {
+    min-width: 280px;
+    background: linear-gradient(to bottom right, #0b3d91, #0d5caa);
+    color: white;
+    padding: 20px;
+    border-radius: 14px;
+    flex-shrink: 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%230066cc' fill-opacity='0.05'%3E%3Cpolygon points='5,0 10,2.5 10,7.5 5,10 0,7.5 0,2.5'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
+    background-size: 80px 80px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.card a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.card .arrow {
+    margin-left: 6px;
+}
+
+.pill {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.pill::before {
+    content: "1920";
+    background: #f062c0;
+    color: white;
+    padding: 6px 24px;
+    border-radius: 20px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .exams-header {
+        flex-direction: column;
+    }
+
+    .exams-left {
+        border-right: none;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+    .exams-right {
+        gap: 40px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-scroll {
+        gap: 14px;
+    }
+
+    .card {
+        min-width: 240px;
+    }
+}

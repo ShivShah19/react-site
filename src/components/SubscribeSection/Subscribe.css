@@ -1,0 +1,108 @@
+.subscribe {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.subscribe-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.subscribe-content {
+    flex: 1 1 350px;
+    max-width: 600px;
+}
+
+.subscribe-content h2 {
+    color: #1b2e59;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.subscribe-content p {
+    color: #4b4b4b;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.subscribe-input {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    min-width: 250px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.subscribe-button {
+    background-color: #1b2e59;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.subscribe-button .arrow {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.subscribe-button .arrow {
+    width: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-button .arrow img {
+    width: 100%;
+}
+
+.subscribe-image {
+    width: 480px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.subscribe-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .subscribe-container,
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-button {
+        justify-content: center;
+    }
+
+    .subscribe-image {
+        max-width: 450px;
+        width: auto;
+        margin-top: 00px;
+    }
+}
